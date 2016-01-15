@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>MultiSelect</title>
+	<style type="text/css">
+	select {
+		width: 200px;
+		padding: 10px;
+	}
+	</style>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="multiselect.css">
+	<script type="text/javascript" src="multiselect.js" ></script>
+</head>
+<body>
+<select>
+	<option>Любой</option>
+	<option>Потерян</option>
+	<option>Завершён оператором</option>
+	<option>Завершён клиентом</option>
+	<option>Перевод</option>
+	<option>Любой1</option>
+	<option>Потерян1</option>
+	<option>Завершён оператором1</option>
+	<option>Завершён клиентом1</option>
+	<option>Перевод1</option>
+	<option>Любой2</option>
+	<option>Потерян2</option>
+	<option>Завершён оператором2</option>
+	<option>Завершён клиентом2</option>
+	<option>Перевод2</option>
+	<option>Любой3</option>
+	<option>Потерян3</option>
+	<option>Завершён оператором3</option>
+	<option>Завершён клиентом3</option>
+	<option>Перевод3</option>
+</select>
+<script type="text/javascript">
+	var el = document.querySelectorAll('select')[0];
+	_MultiSelect.bind('sel', el, { popup: true, multiple: true, attachedValueList: true, optsOnclick: function(){ console.log(1); } });
+</script>
+</body>
+</html>
